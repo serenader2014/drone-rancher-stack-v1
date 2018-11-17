@@ -33,7 +33,7 @@ image
 : dubc/drone-rancher-stack-v1  
 
 url
-: The url where your rancher resides. E.g rancher.domain.com
+: The url where your rancher resides. E.g http://rancher.domain.com
 
 stack
 : This stack must already exist in your rancher environment. E.g app-staging
@@ -69,7 +69,7 @@ pull
             
       rancher-v1-staging-upgrade:
         image: dubc/drone-rancher-stack-v1
-        url: rancher.domain.com
+        url: http://rancher.domain.com
         stack: app-staging        
 -       accesskey: RANCHER_ACCESS_KEY
 -       secretkey: RANCHER_SECRET_KEY
